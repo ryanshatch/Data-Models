@@ -1,0 +1,9 @@
+The HashTable program is a program that is meant to manage a collection of bids via a hash table, utilizing chaining to address collisions. This structure proves highly effective for operations such as reading, searching, and removing elements, which is vital for handling large datasets like those of a municipal government's auction bid records.
+
+The source to this project is within the HashTable class, which oversees a vector of Node pointers. Each Node holds bid data and a key derived from a hash function. The class's main methods are Insert, PrintAll, Remove, and Search.
+- Load: Opens a CSV file containing bids, reads the bids, and then uses "Insert" in order to place a new bid into the hash table, while handling collisions via chaining.
+- PrintAll: Traverses each bucket and chain in the hash table to display all bids.
+- Remove: Eliminates a bid based on a specified bid ID, ensuring the chain's integrity is preserved.
+- Search: Retrieves and returns a bid that matches the given bid ID.
+
+Developing this program served as a pretty good exercise for hands on learning on understanding and implementing hash tables. Personally, one big challenge was to ensure the hash function yielded an even distribution of keys to reduce collisions, along with effectively applying chaining. I also struggled with the implementation of the hash function and the nodes within the hash table. In order to address these challenges I used a very systematic approach, simply debugging to track the program's flow and verify correct pointer management. I also had to make sure that the program had no problems with memory leaks or dangling pointers. 

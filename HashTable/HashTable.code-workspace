@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.html": "html",
+			"*.md": "markdown",
+			"*.cpp": "cpp",
+			"xstring": "cpp",
+			"iostream": "cpp"
+		}
+	}
+}

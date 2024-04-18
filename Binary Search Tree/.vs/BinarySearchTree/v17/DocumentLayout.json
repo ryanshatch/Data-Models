@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rshat\\Documents\\Computer Science School\\CS\\05\\Final Tree\\Final Tree\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9AC675E-0D8F-461D-B950-255C3EA5C136}|BinarySearchTree.vcxproj|C:\\Users\\rshat\\Documents\\Computer Science School\\CS\\05\\Final Tree\\Final Tree\\BinarySearchTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9AC675E-0D8F-461D-B950-255C3EA5C136}|BinarySearchTree.vcxproj|solutionrelative:BinarySearchTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BinarySearchTree.cpp",
+              "DocumentMoniker": "C:\\Users\\rshat\\Documents\\Computer Science School\\CS\\05\\Final Tree\\Final Tree\\BinarySearchTree.cpp",
+              "RelativeDocumentMoniker": "BinarySearchTree.cpp",
+              "ToolTip": "C:\\Users\\rshat\\Documents\\Computer Science School\\CS\\05\\Final Tree\\Final Tree\\BinarySearchTree.cpp",
+              "RelativeToolTip": "BinarySearchTree.cpp",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAcwMYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-07T20:15:56.278Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+Program HashTable
+    Define DEFAULT_SIZE as 179
+    Define GLOBAL_SLEEP_TIME as 5000
+
+    Structure Bid
+        Define bidId as String
+        Define title as String
+        Define fund as String
+        Define amount as Double
+
+    Structure Node
+        Define bid as Bid
+        Define key as Unsigned Integer
+        Define next as Node
+
+    Class HashTable
+        Private:
+            Declare nodes as Vector of Node Pointers
+            Declare tableSize as Unsigned Integer initialized to DEFAULT_SIZE
+            Declare Hash Method accepting an Integer
+        Public:
+            Constructor HashTable()
+            Constructor HashTable(size)
+            Destructor ~HashTable()
+            Method Insert(bid)
+            Method PrintAll()
+            Method Remove(bidId)
+            Method Search(bidId)
+            Method Hash(bidId)
+
+    HashTable Constructor
+        Resize nodes to tableSize and initialize with nullptr
+
+    HashTable Destructor
+        Erase nodes from beginning to end
+
+    Method Hash(bidId)
+        Initialize hashValue to 0
+        For each character in bidId
+            Multiply hashValue by 31 and add ASCII value of character
+        Return hashValue modulo tableSize
+
+    Method Insert(bid)
+        Generate key using Hash(bidId)
+        If no node at key
+            Insert new Node at key
+        Else
+            Find the end of the list and attach new Node
+
+    Method PrintAll()
+        For each node in the table
+            Print bid information
+
+    Method Remove(bidId)
+        Generate key using Hash(bidId)
+        If bid is found at key
+            Remove bid and manage pointers
+
+    Method Search(bidId)
+        Generate key using Hash(bidId)
+        If bid is found at key
+            Return bid
+        Else
+            Return empty bid
+
+    Method main()
+        Process command line arguments for CSV file and bidKey
+        Initialize hash table
+        While user choice not equal to 'Exit'
+            Display menu options
+            Get user choice
+            Perform action based on choice:
+                Load Bids: Call loadBids() and measure time
+                Display All Bids: Call PrintAll()
+                Find Bid: Call Search(bidKey) and measure time
+                Remove Bid: Call Remove(bidKey)
+                Exit: End program
+            End While
+        End Program
+
+End Program HashTable
