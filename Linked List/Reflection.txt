@@ -1,0 +1,11 @@
+Code Reflection:
+
+The purpose of the LinkedList program is to demonstrate the implementation and usage of a singly linked list in C++. It allows the list of bids to be manipulated: for each bid, id, title, fund, and amount are given.
+
+The LinkedList class supports the main functionalities, including append and prepend bids to the list, print all bids, remove a particular bid, search for a bid, and find the size of the list.
+
+The development of this program passes through several steps in which the first one includes defining the struct Node and class LinkedList. Each Node has a Bid and a pointer to the next Node in the list. This class includes the LinkedList that deals with these nodes to carry out different operations such as add, remove, and search for bids. I faced a challenge with effective memory management during development. These problems were greatly in the destructor and the Remove method. It was very important to delete Nodes properly, as failure in doing so would have resulted in memory leaks.
+
+The problem was that I was not going through the list again and deleting every Node in the destructor. Updated the pointers in the list and ensured that the Node is to be deleted; it also gets deleted in the Remove method. The other consideration was in edge cases: prepend/append with an empty list, remove from the head/tail of the list, or searching for a bid in an empty list. I had to put up the if else and else if statements in my source code wherever possible, such that head and tail pointers get updated accordingly to check for all these specific scenarios in debugging the issues.
+
+In total, this was a very valuable exercise in coming to understand so much more about the mechanics of linked lists and the great importance of really careful pointer management in C++. It provided practical experience with implementing basic data structures and their associated operations.

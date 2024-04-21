@@ -1,0 +1,99 @@
+LinkedList Pseudocode:
+
+Class LinkedList
+    Private:
+        Struct Node
+            Bid bid
+            Node* next
+        EndStruct
+
+        Node* head
+        Node* tail
+        int size
+
+    Public:
+        Constructor LinkedList()
+            head = null
+            tail = null
+            size = 0
+        EndConstructor
+
+        Destructor ~LinkedList()
+            current = head
+            While current is not null
+                temp = current
+                current = current.next
+                Delete temp
+            EndWhile
+        EndDestructor
+
+        Method Append(Bid bid)
+            newNode = new Node(bid)
+            If head is null
+                head = newNode
+                tail = newNode
+            Else
+                tail.next = newNode
+                tail = newNode
+            EndIf
+            size = size + 1
+        EndMethod
+
+        Method Prepend(Bid bid)
+            newNode = new Node(bid)
+            If head is not null
+                newNode.next = head
+            Else
+                tail = newNode
+            EndIf
+            head = newNode
+            size = size + 1
+        EndMethod
+
+        Method PrintList()
+            current = head
+            While current is not null
+                Print current.bid.bidId, current.bid.title, current.bid.amount, current.bid.fund
+                current = current.next
+            EndWhile
+        EndMethod
+
+        Method Remove(bidId)
+            If head is not null and head.bid.bidId equals bidId
+                temp = head
+                head = head.next
+                Delete temp
+                size = size - 1
+            Else
+                current = head
+                While current.next is not null
+                    If current.next.bid.bidId equals bidId
+                        temp = current.next
+                        current.next = current.next.next
+                        If temp equals tail
+                            tail = current
+                        EndIf
+                        Delete temp
+                        size = size - 1
+                        Return
+                    EndIf
+                    current = current.next
+                EndWhile
+            EndIf
+        EndMethod
+
+        Method Search(bidId)
+            current = head
+            While current is not null
+                If current.bid.bidId equals bidId
+                    Return current.bid
+                EndIf
+                current = current.next
+            EndWhile
+            Return new Bid
+        EndMethod
+
+        Method Size()
+            Return size
+        EndMethod
+EndClass
