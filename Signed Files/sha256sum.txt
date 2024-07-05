@@ -1,0 +1,2 @@
+76f0d937e6756f4e9a03db66ee62c81539284086ec28280426ef103f1e21a2c0  Data Models Archive.tar.gpg
+7cd6953d51134b2c7b27be200fbabacaf0159a27a152f598400caa7fafce55b1  ryanshatch_0x38771BE8_public.asc.sig
