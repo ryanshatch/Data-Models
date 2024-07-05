@@ -24,3 +24,12 @@ Working on these projects has helped to properly introduce and emphasize how cru
 Working with data structures has helped me to better maintain readability and structured logic. I have also been able to practice thoroughly how to clearly comment and adhere to the next developer that would be working with the software and data structure. Practicing on C++ best practices has helped me become more adaptable and helped me to design code for programs that can be easily adaptable and upgraded to larger scale data structures or algorithms.
 
 <hr>
+<picture>
+    <div style="text-align">
+    <div align="center">
+        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ryanshatch/Data-Models/blob/main/DB.PNG">
+        <img alt=" " src="https://github.com/ryanshatch/Data-Models/blob/main/DB.PNG" style="width: 75%; height: 50%;">
+    </div>
+    </div>
+</picture>
+<hr>
